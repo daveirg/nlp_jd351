@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daveirg-nlp_jd351"
+version = "0.1.0"
+description = "从输入中抽取数值，计算NLP 算法工程师·智能体的任务终止条件相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "daveirg" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://daveirg.github.io"
+Repository = "https://github.com/daveirg/nlp_jd351"
+Issues = "https://github.com/daveirg/nlp_jd351/issues"
+
+[project.scripts]
+nlp_jd351 = "nlp_jd351:main"
+
+[tool.setuptools]
+py-modules = ["nlp_jd351"]
